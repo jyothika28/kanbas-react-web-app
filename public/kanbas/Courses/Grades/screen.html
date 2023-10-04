@@ -1,0 +1,181 @@
+<html>
+<head>
+<link rel="stylesheet" href="/styles.css" />
+<link rel="stylesheet" href="screen.css" />
+<link rel="stylesheet" href="../../KanbasNavigation/index.css" />
+<link rel="stylesheet" href="../CourseNavigation/index.css"/>
+<link rel="stylesheet" href="../../../vendors/font-awesome/css/font-awesome.css"/>
+<link rel="stylesheet" href="../../../vendors/bootstrap/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div class="row">
+        
+        <div class="col-1">
+            <ul class="wd-kanbas-navigation">
+                <img class="northeastern-logo" src="../../../images/northeastern_logo.png" alt="Northeastern-logo">
+                <li><a href="../../Account/Profile/index.html">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                    Account
+                </a></li>
+                <li><a href="../../Dashboard/screen.html">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    Dashboard</a></li>
+                <li class="wd-active"><a href="../../Courses/Home/screen.html">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    Courses</a></li>
+                <li><a href="kanbas/Calender/screen.html">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    Calender</a></li>
+                <li><a href="kanbas/Inbox/screen.html">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    Inbox</a></li>
+                <li><a href="kanbas/History/screen.html">
+                    <i class="fa fa-history" aria-hidden="true"></i>
+                    History</a></li>
+                <li><a href="kanbas/Studio/screen.html">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    Studio</a></li>
+                <li><a href="kanbas/Commons/screen.html">
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Commons</a></li>
+                <li><a href="kanbas/Help/screen.html">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i><br>
+                    Help</a></li>
+            </ul>
+        </div>
+       <div class="col">
+        <br>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <i class="fa fa-bars" aria-hidden="true" style="color:rgb(173,36,36); font-size:1.5em;"></i>&emsp;
+              <li class="breadcrumb-item"><a href="#" style="color:rgb(173,36,36);">CS5610.11744.202310</a></li>
+              <li class="breadcrumb-item active" aria-current="page"> Grades</li>
+              </ol>
+            
+          </nav>
+          <hr>
+        <div class="row">
+        <div class="col-2">
+            <ul class="wd-course-navigation">
+                <li > <a href="../../Courses/Home/screen.html">Home</a></li>
+                <li> <a href="../../Courses/Modules/screen.html">Modules</a></li>
+                <li> <a href="/kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+                <li> <a href="/kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
+                <li > <a href="../../Courses/Assignments/screen.html">Assignments</a></li>
+                <li> <a href="/kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+                <li class="wd-active"> <a href="../../Courses/Grades/screen.html">Grades</a></li>
+                <li> <a href="/kanbas/Courses/People/screen.html">People</a></li>
+                <li> <a href="/kanbas/Courses/Panapto Video/screen.html">Panapto Video</a></li>
+                <li> <a href="/kanbas/Courses/Discussions/screen.html">Discussions</a></li>
+                <li> <a href="/kanbas/Courses/Announcements/screen.html">Announcements</a></li>
+                <li> <a href="/kanbas/Courses/Pages/screen.html">Pages</a></li>
+                <li> <a href="/kanbas/Courses/Files/screen.html">Files</a></li>
+                <li> <a href="/kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
+                <li> <a href="/kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
+                <li> <a href="/kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
+                <li> <a href="/kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+                <li> <a href="../Settings/CourseDetails/screen.html">Settings</a></li>
+            </ul>
+        </div>
+        <div class="col">
+           
+            <div class="float-end">
+                
+                <button class="border btn btn-light"><i class="fa fa-sign-in" aria-hidden="true"></i>&emsp;Import</button>
+                <button class="border btn btn-light"><i class="fa fa-sign-out" aria-hidden="true"></i>&emsp;Export</button>
+            <button class="border btn btn-light"><i class="fa fa-cog" aria-hidden="true"></i></button>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col">
+                <label for="exampleDataList" class="form-label"><b>Student Names</b></label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search Students">
+                <datalist id="datalistOptions">
+                <option value="Student 1">
+                </datalist>
+                </div>
+                <div class="col">
+                <label for="exampleDataList" class="form-label"><b>Assignment Names</b></label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Search Assignments">
+                <datalist id="datalistOptions">
+                <option value="Assignment 1">
+                </datalist>
+                </div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-light"><i class="fa fa-filter" aria-hidden="true"></i>&emsp;Apply Filters</button>
+            <div class="table-responsive">
+                <table class="table table-striped table table-bordered">
+                    <tr>
+                        <th><b>Student Name</b></th>
+                        <th><b>A1 SETUP Out of 100</b></th>
+                        <th><b>A2 HTML Out of 100</b></th>
+                        <th><b>A3 CSS Out of 100</b></th>
+                        <th><b>A4 BOOTSTRAP Out of 100</b></th>
+                        <th><b>A5 JAVASCRIPT Out of 100</b></th>
+                        <th><b>A6 REACT Out of 100</b></th>
+                        <th><b>A7 REDUX Out of 100</b></th>
+                        <th><b>A8 NODE Out of 100</b></th>
+                        <th><b>A9 MONGO Out of 100</b></th>
+                    </tr>
+                    <tr>
+                        <th>Emily Jackson</th>
+                        <td>90</td>
+                        <td>87</td>
+                        <td><input type="number" max="100" min="0" value="97"></td>
+                        <td>89</td>
+                        <td>90</td>
+                        <td>100</td>
+                        <td>94</td>
+                        <td>92</td>
+                        <td><input type="number" max="100" min="0" value="91"></td>
+                    </tr>
+                    <tr>
+                        <th>Amy Santiago</th>
+                        <td><input type="number" max="100" min="0" value="100"></td>
+                        <td>83</td>
+                        <td>97</td>
+                        <td>89</td>
+                        <td><input type="number" max="100" min="0" value="90"></td>
+                        <td>100</td>
+                        <td>94</td>
+                        <td>92</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <th>Jake Peralta</th>
+                        <td>80</td>
+                        <td>72</td>
+                        <td>86</td>
+                        <td>89</td>
+                        <td><input type="number" max="100" min="0" value="90"></td>
+                        <td>100</td>
+                        <td><input type="number" max="100" min="0" value="94"></td>
+                        <td>50</td>
+                        <td><input type="number" max="100" min="0" value="91"></td>
+                    </tr>
+                    <tr>
+                        <th>Lorelai Gilmore</th>
+                        <td>99</td>
+                        <td>76</td>
+                        <td><input type="number" max="100" min="0" value="97"></td>
+                        <td>85</td>
+                        <td>75</td>
+                        <td><input type="number" max="100" min="0" value="100"></td>
+                        <td>84</td>
+                        <td>92</td>
+                        <td><input type="number" max="100" min="0" value="71"></td>
+                    </tr>
+                </table>
+                </div>
+            <!-- 
+        <button>Configure</button>
+        <br>
+        <h2>Student Names</h2>
+        <input type="text" placeholder="Search Students">
+        <h2>Assignment Names</h2>
+        <input type="text" placeholder="Search Assignments">
+        <button>Apply Filters</button>
+        
+   -->

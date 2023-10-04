@@ -1,0 +1,6 @@
+.nav-item a{
+    color: rgb(173, 36, 36);
+}
+.nav-item .nav-link .active{
+    color: rgb(0, 0, 0);
+}

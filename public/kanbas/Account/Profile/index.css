@@ -1,0 +1,55 @@
+.wd-flex-row-container .wd-profile-icon i{
+    font-size: 9em;
+    color: rgb(108, 100, 100);
+    margin-top: 40%;
+}
+.wd-flex-row-container .wd-third-column{
+    margin-left: 3%;
+    margin-top: 4%;
+}
+.wd-flex-row-container .wd-center-section div{
+    padding: 5px;
+}
+.wd-flex-row-container .wd-cancel-edit{
+    text-decoration: none;
+
+}
+.wd-flex-row-container .mb-3 tr .into-icon a{
+    text-decoration: none;
+    color: black;
+}
+.wd-flex-row-container .mb-3 th{
+    text-align: center;
+}
+
+.wd-flex-row-container .btn .btn-light .wd-bottom-two-buttons  button a{
+    text-decoration: none;
+    color: black;
+}
+.wd-flex-row-container .wd-edit a{
+    text-decoration: none;
+    color: black;
+}
+
+.wd-flex-row-container .wd-edit {
+    margin-top: 4%;
+}
+.wd-links a i{
+    color: black;
+}
+.wd-links a{
+    text-decoration: none;
+    color: rgb(173,36,36);
+}
+.wd-profile-icon i{
+    font-size: 9rem;
+    color: grey;
+}
+.float-start a{
+text-decoration: none;
+color: black;
+}
+.wd-stop-dec a{
+    text-decoration: none;
+    color: black;
+    }

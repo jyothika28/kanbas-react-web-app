@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wd-main-css-heading{
+    color: green;
+    background-color: yellow ;
+}
+.wd-fg-color-black{
+    color:black;
+}
+.wd-fg-color-white{
+    color:white;
+}
+.wd-fg-color-blue{
+    color:blue;
+}
+.wd-fg-color-red{
+    color:rgb(177, 36, 36);
+}
+.wd-fg-color-green{
+    color:green;
+}
+.wd-bg-color-yellow{
+    background-color: yellow;
+}
+.wd-bg-color-blue{
+    background-color: blue;
+}
+.wd-bg-color-red{
+    background-color: rgb(177, 36, 36);
+}
+.wd-bg-color-green{
+    background-color: green;
+}
+.wd-bg-color-black{
+    background-color: rgb(0, 0, 0);
+}
+.wd-flex-row-container{
+    display:flex;
+    flex-direction: row;
+}
+.wd-flex-grow-1{
+    flex-grow: 1;
+}

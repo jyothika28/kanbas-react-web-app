@@ -1,0 +1,12 @@
+.table-responsive th,td{
+    font-size: 0.80em;
+    font-weight: normal;
+}
+.table-responsive{
+    margin-top: 2%;
+}
+table tr th{
+    color:rgb(173,36,36);
+}
+
+
