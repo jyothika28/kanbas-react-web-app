@@ -1,0 +1,24 @@
+.wd-dashboard-grid .col{
+    width: 280px;
+    height: 260px;
+    margin: 2%;
+    
+}
+
+.card-text{
+    font-size: 12px;
+}
+.card-title{
+font-size: 14px;
+color: blue;
+}
+.card-text i{
+    font-size: 1.8em;
+}
+.card-text a{
+    text-decoration: none;
+    color: black;
+}
+.card-text i:hover{
+    color: red;
+}
