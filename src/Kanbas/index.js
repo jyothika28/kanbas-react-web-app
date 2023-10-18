@@ -1,9 +1,9 @@
 import {Link, Route, Routes,Navigate} from "react-router-dom";
-import Nav from "../Nav";
 import KanbasNavigation from "./KanbasNavigation";
 import Account from "./Account";
-import Dashboard from "./Dashboard";
 import Courses from "./Courses";
+import Dashboard from "./Dashboard";
+
 function Kanbas() {
    return (
      <div className="d-flex">
