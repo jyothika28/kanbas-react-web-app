@@ -2,7 +2,7 @@ import { Navigate, useLocation,Route, Routes,useParams } from "react-router";
 import React from "react";
 import db from "../Database";
 import CourseNavigation from "./CourseNavigation";
-import {FaAlignJustify, FaBars} from "react-icons/fa";
+import {FaBars} from "react-icons/fa";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";

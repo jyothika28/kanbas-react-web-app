@@ -1,7 +1,5 @@
-import JsonStringify from "../../Labs/a3/JsonStringify";
 import db from "../Database";
 import { Link } from "react-router-dom";
-import JsonPre from "../../Labs/a3/JsonPre";
 import "./index.css";
 import {BsPencilSquare} from "react-icons/bs"
 function Dashboard()
@@ -19,7 +17,7 @@ function Dashboard()
       <div className="list-group">
       <div className="row row-cols-1 row-cols-md-4 g-4 wd-dashboard-grid">
         {courses.map((course) => (
-          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
+          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item" style={{border:"none"}}>
             <div class="col">
             <div class="card h-100">
                         <img src={course.image} class="card-img-top" alt="..."/>
