@@ -6,8 +6,12 @@ import Dashboard from "./Dashboard";
 
 function Kanbas() {
    return (
-     <div className="d-flex">
+    <div class="overflow-x-hidden">
+     <div className="row">
+      <div className="col-1">
        <KanbasNavigation/>
+       </div>
+       <div className="col">
        <div>
         <Routes>
         <Route path="/" element={<Navigate to="Dashboard" />} />
@@ -23,6 +27,8 @@ function Kanbas() {
         </Routes>
       
        </div>
+     </div>
+     </div>
      </div>
    );
  }

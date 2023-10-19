@@ -8,7 +8,7 @@ function Dashboard()
     const course_length=courses.length;
 
   return (
-    <div className="container">
+    <div>
       <h1>Dashboard</h1>
       <hr/>
       <div className="container">

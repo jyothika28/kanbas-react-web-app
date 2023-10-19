@@ -7,7 +7,7 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
-import Nav from "./Nav";
+import KanbasNavBar from "./KanbasNavBar";
 
 function Courses()
 {
@@ -16,13 +16,9 @@ function Courses()
     const [priorkanbas,kanbas,courses,id,screen]=pathname.split('/');
     const course=db.courses.find((course) =>course._id===courseId);
     return(
-        <div className="container">
-          <div>
-          <Nav/>
-          </div>
-          <div>
-            <hr/>
-          </div>
+        <div>
+          <KanbasNavBar/>
+         
             <CourseNavigation/>
 
             <div className="container">
@@ -31,7 +27,6 @@ function Courses()
             left: "250px",
             top: "60px",
           }}>
-        
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />

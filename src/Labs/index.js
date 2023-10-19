@@ -1,6 +1,7 @@
 import Assignment3 from "./a3";
 import Nav from "../Nav";
 import {Link} from "react-router-dom";
+import KanbasNavigation from "../Kanbas/KanbasNavigation";
 function Labs(){
     return (
         <div className="container">

@@ -59,7 +59,7 @@ function Grades() {
               const user = db.users.find((user) => user._id === enrollment.user);
               return (
                 <tr>
-                   <td>{user.firstName} {user.lastName}</td>
+                   <td style={{color:"rgb(176,37,37)"}}>{user.firstName} {user.lastName}</td>
                    {assignments.map((assignment) => {
                      const grade = db.grades.find(
                        (grade) => grade.student === enrollment.user && grade.assignment === assignment._id);

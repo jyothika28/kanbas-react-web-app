@@ -33,6 +33,10 @@
     padding: 0px;
     width: 80px;
     margin: 0px;
+    height: 100%;
+    border-radius: 0px;
+    --bs-list-group-border-width:none;
+    --bs-list-group-border-radius:none
 }
 .wd-kanbas-navigation a{
     text-align: center;
