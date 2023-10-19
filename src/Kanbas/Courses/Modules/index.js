@@ -10,8 +10,8 @@ function Modules() {
       <div className="row">
     <div className="col">
     <div className="float-end">
-              <button className="border btn btn-light">Collapse All</button>
-              <button className="border btn btn-light">View Progress</button>
+              <button className="border btn btn-light p-2">Collapse All</button>
+              <button className="border btn btn-light p-2">View Progress</button>
               <div className="d-inline-flex p-2">
                   <select className="form-select" aria-label="Default select example">
                       <option>Publish all</option>
@@ -21,8 +21,8 @@ function Modules() {
                   </select>
               </div>
               
-          <button className="border btn btn-danger"><AiOutlinePlus style={{fontSize:"1.5rem"}}/> Module</button>
-          <button className="border btn btn-light"><HiOutlineEllipsisVertical style={{fontSize:"1.5rem"}}/></button>
+          <button className="border btn btn-danger me-2"><AiOutlinePlus style={{fontSize:"1.5rem"}}/> Module</button>
+          <button className="border btn btn-light me-2"><HiOutlineEllipsisVertical style={{fontSize:"1.5rem"}}/></button>
           
           </div>
         </div>

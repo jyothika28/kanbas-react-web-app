@@ -55,13 +55,13 @@ function Home() {
             <br/>
             <div className="d-grid">
             
-            <button type="button" className="border btn btn-light"><LiaFileExportSolid style={{fontSize:"1.5rem"}}/>Import Existing Content</button>
-            <button type="button" className="border btn btn-light"><TbCircleArrowRightFilled style={{fontSize:"1.5rem"}}/>Import from Commons</button>
-            <button type="button" className="border btn btn-light"><GiMicroscopeLens style={{fontSize:"1.5rem"}}/> Choose Home Page</button>
-            <button type="button" className="border btn btn-light"><BiSolidBarChartAlt2 style={{fontSize:"1.5rem"}}/>View Course Stream</button>
-            <button type="button" className="border btn btn-light"><GrAnnounce style={{fontSize:"1.5rem"}}/> New Announcement</button>
-            <button type="button" className="border btn btn-light"><BiSolidBarChartAlt2 style={{fontSize:"1.5rem"}}/> New Analytics</button>
-            <button type="button" className="border btn btn-light"><BsBell style={{fontSize:"1.5rem"}}/> View Course Notifications</button>
+            <button type="button" className="border btn btn-light" style={{textAlign:"left"}}><LiaFileExportSolid style={{fontSize:"1.5rem"}}/>Import Existing Content</button>
+            <button type="button" className="border btn btn-light" style={{textAlign:"left"}}><TbCircleArrowRightFilled style={{fontSize:"1.5rem"}}/>Import from Commons</button>
+            <button type="button" className="border btn btn-light" style={{textAlign:"left"}}><GiMicroscopeLens style={{fontSize:"1.5rem"}}/> Choose Home Page</button>
+            <button type="button" className="border btn btn-light" style={{textAlign:"left"}}><BiSolidBarChartAlt2 style={{fontSize:"1.5rem"}}/>View Course Stream</button>
+            <button type="button" className="border btn btn-light" style={{textAlign:"left"}}><GrAnnounce style={{fontSize:"1.5rem"}}/> New Announcement</button>
+            <button type="button" className="border btn btn-light" style={{textAlign:"left"}}><BiSolidBarChartAlt2 style={{fontSize:"1.5rem"}}/> New Analytics</button>
+            <button type="button" className="border btn btn-light" style={{textAlign:"left"}}><BsBell style={{fontSize:"1.5rem"}}/>View Course Notifications</button>
             </div>
             <br/>
             <h4>Comming Up</h4>

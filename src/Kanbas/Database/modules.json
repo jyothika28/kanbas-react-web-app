@@ -52,5 +52,121 @@
       "name": "Spacecraft Systems Engineering",
       "description": "Overview of spacecraft systems and subsystems engineering.",
       "course": "RS103"
-    }
-  ]
+    },
+      {
+        "_id": "M101",
+        "name": "Web Development Fundamentals",
+        "description": "Introduction to the fundamental concepts of web development.",
+        "course": "CS4550"
+      },
+      {
+        "_id": "M102",
+        "name": "Front-End Technologies",
+        "description": "Exploring front-end web development technologies and best practices.",
+        "course": "CS4550"
+      },
+      {
+        "_id": "M103",
+        "name": "Back-End Development",
+        "description": "Understanding back-end web development and server-side technologies.",
+        "course": "CS4550"
+      },
+      {
+        "_id": "M201",
+        "name": "Responsive Web Design",
+        "description": "Designing web applications that adapt to different devices and screen sizes.",
+        "course": "CS4550"
+      },
+      {
+        "_id": "M202",
+        "name": "Web Application Security",
+        "description": "Exploring security practices and vulnerabilities in web applications.",
+        "course": "CS4550"
+      },
+      {
+        "_id": "M203",
+        "name": "Database Management for the Web",
+        "description": "Database integration and management in web development.",
+        "course": "CS4550"
+      },
+      {
+        "_id": "M301",
+        "name": "Advanced Web Development Tools",
+        "description": "Exploring advanced tools and frameworks for web development.",
+        "course": "CS5610"
+      },
+      {
+        "_id": "M302",
+        "name": "Cloud Computing in Web Apps",
+        "description": "Utilizing cloud computing services in web application development.",
+        "course": "CS5610"
+      },
+      {
+        "_id": "M303",
+        "name": "Web Application Deployment Strategies",
+        "description": "Strategies for deploying web applications to production environments.",
+        "course": "CS5610"
+      },
+        {
+          "_id": "M401",
+          "name": "Web Application Testing and Quality Assurance",
+          "description": "Strategies for testing and ensuring the quality of web applications.",
+          "course": "CS4550"
+        },
+        {
+          "_id": "M402",
+          "name": "Web Development Frameworks",
+          "description": "Exploring popular web development frameworks and libraries.",
+          "course": "CS4550"
+        },
+        {
+          "_id": "M403",
+          "name": "User Experience (UX) Design for the Web",
+          "description": "Design principles and best practices for web UX.",
+          "course": "CS4550"
+        },
+        {
+          "_id": "M404",
+          "name": "Web Accessibility and Inclusive Design",
+          "description": "Ensuring web content is accessible to all users.",
+          "course": "CS4550"
+        },
+        {
+          "_id": "M501",
+          "name": "Web Development Capstone Project",
+          "description": "Building a comprehensive web project as the final assignment.",
+          "course": "CS5610"
+        },
+        {
+          "_id": "M502",
+          "name": "Emerging Trends in Web Development",
+          "description": "Exploring the latest trends and innovations in web development.",
+          "course": "CS5610"
+        },
+        {
+          "_id": "M503",
+          "name": "Web Development Career Paths",
+          "description": "Exploring various career paths and opportunities in web development.",
+          "course": "CS5610"
+        },
+        {
+          "_id": "M504",
+          "name": "Web Development Ethics and Responsibility",
+          "description": "Ethical considerations in web development and responsible practices.",
+          "course": "CS5610"
+        },
+        {
+          "_id": "M505",
+          "name": "Advanced Web Development Topics",
+          "description": "In-depth exploration of advanced topics in web development.",
+          "course": "CS5610"
+        },
+        {
+          "_id": "M506",
+          "name": "Web Application Scaling and Performance",
+          "description": "Strategies for scaling web applications and optimizing performance.",
+          "course": "CS5610"
+        }
+      ]
+      
+    

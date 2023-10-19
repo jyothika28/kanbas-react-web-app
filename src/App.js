@@ -23,9 +23,11 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+
+
     <HashRouter>
             <Routes>
-            <Route path="/"         element={<Navigate to="/Kanbas"/>}/>
+            <Route path="/"         element={<Navigate to="/Labs"/>}/>
           <Route path="/hello"    element={<HelloWorld/>}/>
           <Route path="/Labs/*"   element={<Labs/>}/>
           <Route path="/Kanbas/*" element={<Kanbas/>}/>

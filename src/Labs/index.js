@@ -7,6 +7,7 @@ function Labs(){
             <Nav/>
                <Link to="/hello">Hello</Link> |
                 <Link to="/Labs/a3">A3</Link> |
+                Click here to navigate to the Kanbas Application&emsp;
                 <Link to="/Kanbas">Kanbas</Link>
             <Assignment3 />
         </div>

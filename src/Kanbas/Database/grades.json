@@ -72,5 +72,186 @@
       "student": "126",
       "assignment": "A202",
       "grade": "80"
-    }
+    },
+      {
+        "_id": "28",
+        "student": "121",
+        "assignment": "A101",
+        "grade": "92"
+      },
+      {
+        "_id": "29",
+        "student": "122",
+        "assignment": "A101",
+        "grade": "91"
+      },
+      {
+        "_id": "30",
+        "student": "123",
+        "assignment": "A101",
+        "grade": "90"
+      },
+      {
+        "_id": "31",
+        "student": "121",
+        "assignment": "A102",
+        "grade": "88"
+      },
+      {
+        "_id": "32",
+        "student": "122",
+        "assignment": "A102",
+        "grade": "89"
+      },
+      {
+        "_id": "33",
+        "student": "123",
+        "assignment": "A102",
+        "grade": "90"
+      },
+      {
+        "_id": "34",
+        "student": "124",
+        "assignment": "A103",
+        "grade": "90"
+      },
+      {
+        "_id": "35",
+        "student": "125",
+        "assignment": "A103",
+        "grade": "91"
+      },
+      {
+        "_id": "36",
+        "student": "126",
+        "assignment": "A103",
+        "grade": "92"
+      },
+        {
+          "_id": "37",
+          "student": "127",
+          "assignment": "A109",
+          "grade": "88"
+        },
+        {
+          "_id": "38",
+          "student": "128",
+          "assignment": "A109",
+          "grade": "89"
+        },
+        {
+          "_id": "39",
+          "student": "129",
+          "assignment": "A109",
+          "grade": "90"
+        },
+        {
+          "_id": "40",
+          "student": "130",
+          "assignment": "A110",
+          "grade": "90"
+        },
+        {
+          "_id": "41",
+          "student": "131",
+          "assignment": "A110",
+          "grade": "91"
+        },
+        {
+          "_id": "42",
+          "student": "132",
+          "assignment": "A110",
+          "grade": "92"
+        },
+          {
+            "_id": "28",
+            "student": "121",
+            "assignment": "A101",
+            "grade": "92"
+          },
+          {
+            "_id": "29",
+            "student": "122",
+            "assignment": "A101",
+            "grade": "91"
+          },
+          {
+            "_id": "30",
+            "student": "123",
+            "assignment": "A101",
+            "grade": "90"
+          },
+          {
+            "_id": "31",
+            "student": "121",
+            "assignment": "A102",
+            "grade": "88"
+          },
+          {
+            "_id": "32",
+            "student": "122",
+            "assignment": "A102",
+            "grade": "89"
+          },
+          {
+            "_id": "33",
+            "student": "123",
+            "assignment": "A102",
+            "grade": "90"
+          },
+          {
+            "_id": "34",
+            "student": "124",
+            "assignment": "A103",
+            "grade": "90"
+          },
+          {
+            "_id": "35",
+            "student": "125",
+            "assignment": "A103",
+            "grade": "91"
+          },
+          {
+            "_id": "36",
+            "student": "126",
+            "assignment": "A103",
+            "grade": "92"
+          },
+          {
+            "_id": "37",
+            "student": "127",
+            "assignment": "A109",
+            "grade": "88"
+          },
+          {
+            "_id": "38",
+            "student": "128",
+            "assignment": "A109",
+            "grade": "89"
+          },
+          {
+            "_id": "39",
+            "student": "129",
+            "assignment": "A109",
+            "grade": "90"
+          },
+          {
+            "_id": "40",
+            "student": "130",
+            "assignment": "A110",
+            "grade": "90"
+          },
+          {
+            "_id": "41",
+            "student": "131",
+            "assignment": "A110",
+            "grade": "91"
+          },
+          {
+            "_id": "42",
+            "student": "132",
+            "assignment": "A110",
+            "grade": "92"
+          }
+          
   ]
