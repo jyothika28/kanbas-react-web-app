@@ -54,7 +54,7 @@ function ModuleList() {
         />
   </div>
   <div class="form-group">
-  <button style={{margin:"1%"}} className="btn btn-primary" onClick={() => dispatch(updateModule(module))}> Update</button> 
+  <button style={{margin:"1%"}} className="btn btn-success" onClick={() => dispatch(updateModule(module))}> Update</button> 
   </div>
 </form>
        
@@ -81,6 +81,23 @@ function ModuleList() {
                         <BsFillCheckCircleFill style={{color:"green"}}/><BiCaretDown/>&emsp; <AiOutlinePlus/>&emsp;<HiOutlineDotsVertical/>
                         
             
+                    </div>
+                </li>
+                <li className="list-group-item list-group-item-action" aria-current="true" style={{backgroundColor:"white",border:"1px solid #c7cdd1",padding:"18px"}}>
+                  {module.description}
+                  <div className="float-end">
+                  <BsFillCheckCircleFill style={{color:"green"}}/>&emsp;<HiOutlineDotsVertical/>
+                    </div>
+                </li>
+            </div>
+      ))
+      }
+    </ul>
+    </div>
+  );
+}
+export default ModuleList;
+
                         {/* <Modal show={editM} onHide={handleMClose} animation={true}>
       <Modal.Header closeButton>
           <Modal.Title>Edit Module</Modal.Title>
@@ -154,13 +171,3 @@ function ModuleList() {
           </Button>
         </Modal.Footer>
       </Modal> */}
-                    </div>
-                </li>
-            </div>
-      ))
-      }
-    </ul>
-    </div>
-  );
-}
-export default ModuleList;

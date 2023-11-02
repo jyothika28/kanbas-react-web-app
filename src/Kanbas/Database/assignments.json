@@ -9,15 +9,6 @@
     "course": "RS101"
   },
   {
-    "_id": "A102",
-    "title": "Combustion Analysis",
-    "description": "Analyzing combustion processes in engineering.",
-    "due": "Oct 5",
-    "time": "5:00pm",
-    "points": 85,
-    "course": "RS101"
-  },
-  {
     "_id": "A103",
     "title": "Nozzle Design Project",
     "description": "Designing and optimizing propulsion nozzles for rockets.",
@@ -81,30 +72,12 @@
     "course": "RS103"
   },
   {
-    "_id": "A101",
-    "title": "HTML5 and CSS Fundamentals",
-    "description": "Introduction to web development using HTML and CSS.",
-    "due": "Oct 15",
-    "time": "5:00pm",
-    "points": 85,
-    "course": "CS4550"
-  },
-  {
     "_id": "A102",
     "title": "JavaScript Essentials",
     "description": "Fundamentals of JavaScript programming for web development.",
     "due": "Oct 22",
     "time": "4:30pm",
     "points": 90,
-    "course": "CS4550"
-  },
-  {
-    "_id": "A103",
-    "title": "Responsive Web Design Project",
-    "description": "Creating responsive websites for various devices.",
-    "due": "Nov 5",
-    "time": "6:15pm",
-    "points": 95,
     "course": "CS4550"
   },
   {
@@ -152,51 +125,7 @@
     "points": 95,
     "course": "CS4550"
   },
-  {
-    "_id": "A109",
-    "title": "Angular Framework Workshop",
-    "description": "Exploring the Angular framework for web development.",
-    "due": "Oct 20",
-    "time": "4:00pm",
-    "points": 85,
-    "course": "CS5610"
-  },
-  {
-    "_id": "A110",
-    "title": "Database Integration in Web Apps",
-    "description": "Integrating databases with web applications.",
-    "due": "Nov 2",
-    "time": "6:30pm",
-    "points": 90,
-    "course": "CS5610"
-  },
-  {
-    "_id": "A111",
-    "title": "Web Application Testing Strategies",
-    "description": "Testing methodologies for web application development.",
-    "due": "Nov 16",
-    "time": "5:15pm",
-    "points": 88,
-    "course": "CS5610"
-  },
-  {
-    "_id": "A112",
-    "title": "Web Performance Optimization",
-    "description": "Optimizing web application performance and speed.",
-    "due": "Nov 30",
-    "time": "7:00pm",
-    "points": 92,
-    "course": "CS5610"
-  },
-  {
-    "_id": "A113",
-    "title": "GraphQL and REST API Design",
-    "description": "Designing APIs with GraphQL and REST principles.",
-    "due": "Dec 14",
-    "time": "6:45pm",
-    "points": 90,
-    "course": "CS5610"
-  },
+ 
   {
     "_id": "A114",
     "title": "Web Development Capstone Project",
@@ -204,15 +133,6 @@
     "due": "Dec 28",
     "time": "8:30pm",
     "points": 95,
-    "course": "CS5610"
-  },
-  {
-    "_id": "A115",
-    "title": "Web Development Trends and Future",
-    "description": "Exploring emerging trends in web development.",
-    "due": "Jan 10",
-    "time": "4:30pm",
-    "points": 88,
     "course": "CS5610"
   },
   {

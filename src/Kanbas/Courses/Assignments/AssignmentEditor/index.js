@@ -1,14 +1,20 @@
 import React from "react";
 import { useNavigate, useParams, Link } from "react-router-dom";
 import db from "../../../Database";
-
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+  setAssignment,
+} from "../assignmentsReducer";
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
   
-  const assignment = db.assignments.find(
-    (assignment) => assignment._id === assignmentId);
-    console.log(assignmentId);
+  // const assignment = db.assignments.find(
+  //   (assignment) => assignment._id === assignmentId);
+  //   console.log(assignmentId);
 
   const { courseId } = useParams();
   const navigate = useNavigate();
@@ -16,15 +22,25 @@ function AssignmentEditor() {
     console.log("Actually saving assignment TBD in later assignments");
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
+  const assignments = useSelector((state) => state.assignmentsReducer.assignment);
+  const assignment= useSelector((state) => state.assignmentsReducer.assignment);
+  const dispatch = useDispatch();
   return (
     <div className="container">
       <br/>
       <h6>Assignment Name</h6>
       <input placeholder="Enter Assignment Name" value={assignment.title?assignment.title:""}
-             className="form-control mb-2" />
+             className="form-control mb-2" 
+
+             onChange={(e) =>
+               dispatch(setAssignment({ ...assignment, title: e.target.value }))
+             } />
       <div className="mb-3">
             <br/>
-            <textarea placeholder="Enter Assignment Description" className="form-control" id="exampleFormControlTextarea1" rows="4">{assignment.description?assignment.description:""}
+            <textarea placeholder="Enter Assignment Description" onChange={(e) =>
+               dispatch(setAssignment({ ...assignment, description: e.target.value }))
+             } 
+            className="form-control" id="exampleFormControlTextarea1" rows="4">{assignment.description?assignment.description:""}
             </textarea>
           </div>
           <div className="row">
@@ -35,7 +51,10 @@ function AssignmentEditor() {
             </div>
             <div className="col-6">
             <div className="mb-3">
-                <input type="number" value={assignment.points?assignment.points:""}  className="form-control" id="exampleFormControlInput1" placeholder="Enter Points" />
+                <input type="number" value={assignment.points?assignment.points:""} onChange={(e) =>
+               dispatch(setAssignment({ ...assignment, points: e.target.value }))
+             }  
+                className="form-control" id="exampleFormControlInput1" placeholder="Enter Points" />
             </div>
             </div>
         </div>
@@ -203,7 +222,10 @@ function AssignmentEditor() {
                   </div>
                 <div className="mb-3">
                     <label for="exampleFormControlInput1" className="form-label">Due</label>
-                    <input type="date" value={assignment.due?assignment.due:""} class="form-control" id="exampleFormControlInput1" placeholder="Enter Due Date" />
+                    <input type="date" value={assignment.due?assignment.due:""} onChange={(e) =>
+               dispatch(setAssignment({ ...assignment, due: e.target.value }))
+             } 
+                    class="form-control" id="exampleFormControlInput1" placeholder="Enter Due Date" />
                   </div>
                   <div className="row">
                 <div className="col">
@@ -233,8 +255,11 @@ function AssignmentEditor() {
             className="btn btn-danger">
         Cancel
       </Link>
-      <button onClick={handleSave} className="btn btn-success me-2">
-        Save
+      <button onClick={() => 
+            {
+              dispatch(updateAssignment(module));
+              handleSave();
+            }} className="btn btn-success me-2"> Save Changes
       </button>
       </div>
     </div>

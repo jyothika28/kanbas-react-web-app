@@ -4,7 +4,7 @@ import db from "../../Database";
 
 const initialState = {
   assignments: db.assignments,
-  assignment: { name: "Enter Assignment Name", description: "Enter Assignment Description",points: "Enter Assignment Points",dueDate: "Enter Assignment Due Date" },
+  assignment: { name: "Enter Assignment Name", description: "Enter Assignment Description",points: "Enter Assignment Points",due: "Enter Assignment Due Date" },
 };
 
 
