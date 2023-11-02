@@ -8,13 +8,14 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import KanbasNavBar from "./KanbasNavBar";
+import AssignmentNew from "./Assignments/AssignmentNew";
 
-function Courses()
+function Courses({ courses })
 {
     const {courseId}=useParams();
     const { pathname } = useLocation();
-    const [priorkanbas,kanbas,courses,id,screen]=pathname.split('/');
-    const course=db.courses.find((course) =>course._id===courseId);
+    const [priorkanbas,kanbas,courses_from_path,id,screen]=pathname.split('/');
+    const course=courses.find((course) =>course._id===courseId);
     return(
         <div>
           <KanbasNavBar/>
@@ -36,6 +37,7 @@ function Courses()
               path="Assignments/:assignmentId"
               element={<AssignmentEditor/>}
             />
+            <Route path="Assignments/*" element={<AssignmentNew/>} />
             <Route path="Grades" element={<Grades/>} />
           </Routes>
         </div>

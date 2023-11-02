@@ -12,19 +12,14 @@
       "crn":"12631",
       "image":"../../images/blue.jpg"
     },
-    { "_id": "CS5610",
-    "name": "Web development", "number": "CS5610", "startDate": "2023-01-10",
-    "endDate": "2023-05-15",
-    "crn":"17367",
-    "image":"../../images/yellow.jpg"
-    },
+    
     { "_id": "RS102",
       "name": "Aerodynamics", "number": "RS4560", "startDate": "2023-01-10", "endDate": "2023-05-15",
       "crn":"19753",
       "image":"../../images/gray.jpg"
     },
     { "_id": "CS5610",
-      "name": "Web development", "number": "CS4550", "startDate": "2023-01-10",
+      "name": "Web development", "number": "CS5610", "startDate": "2023-01-10",
       "endDate": "2023-05-15",
       "crn":"41752",
       "image":"../../images/pink.jpg"

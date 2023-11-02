@@ -8,6 +8,7 @@ import {RxDragHandleDots2 } from "react-icons/rx";
 import {HiOutlineDotsVertical} from "react-icons/hi";
 import {BsFillCheckCircleFill} from "react-icons/bs";
 import {FaFilePen} from "react-icons/fa6";
+import AssignmentNew from "./AssignmentNew";
 
 function Assignments() {
   const { courseId } = useParams();
@@ -28,7 +29,7 @@ function Assignments() {
             <div className="float-end">
                 
                 <button className="border btn btn-light"><AiOutlinePlus style={{fontSize:"1.5rem"}}/>Group</button>
-                <button className="border btn btn-danger"><AiOutlinePlus style={{fontSize:"1.5rem"}}/>Assignment</button>
+                <Link to="Assignments/AssignmentNew"><button className="border btn btn-danger"><AiOutlinePlus style={{fontSize:"1.5rem"}}/>Assignment</button></Link>
             <button className="border btn btn-light"><HiOutlineEllipsisVertical style={{fontSize:"1.5rem"}}/></button>
             </div>
             <br/>

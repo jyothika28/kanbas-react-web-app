@@ -1,6 +1,6 @@
 .wd-dashboard-grid .col{
     width: 280px;
-    height: 260px;
+    height: 275px;
     margin: 2%;
     
 }
@@ -14,6 +14,7 @@ color: blue;
 }
 .card-text i{
     font-size: 1.8em;
+    padding-top: 2px;
 }
 .card-text a{
     text-decoration: none;
@@ -21,4 +22,7 @@ color: blue;
 }
 .card-text i:hover{
     color: red;
+}
+button .btn .btn-warning .wd-button{
+    margin: 2%;
 }
