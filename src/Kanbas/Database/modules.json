@@ -1,119 +1,56 @@
 [
-    {
-      "_id": "M101",
-      "name": "Introduction to Rocket Propulsion",
-      "description": "Basic principles of rocket propulsion and rocket engines.",
-      "course": "RS101"
-    },
-    {
-      "_id": "M102",
-      "name": "Fuel and Combustion",
-      "description": "Understanding rocket fuel, combustion processes, and efficiency.",
-      "course": "RS101"
-    },
-    {
-      "_id": "M103",
-      "name": "Nozzle Design",
-      "description": "Principles of rocket nozzle design and performance optimization.",
-      "course": "RS101"
-    },
-    {
-      "_id": "M201",
-      "name": "Fundamentals of Aerodynamics",
-      "description": "Basic aerodynamic concepts and fluid dynamics principles.",
-      "course": "RS102"
-    },
-    {
-      "_id": "M202",
-      "name": "Subsonic and Supersonic Flow",
-      "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
-      "course": "RS102"
-    },
-    {
-      "_id": "M203",
-      "name": "Aerodynamic Heating",
-      "description": "Study of aerodynamic heating and thermal protection systems.",
-      "course": "RS102"
-    },
-    {
-      "_id": "M301",
-      "name": "Spacecraft Structural Design",
-      "description": "Fundamentals of designing spacecraft structures and materials selection.",
-      "course": "RS103"
-    },
-    {
-      "_id": "M302",
-      "name": "Orbital Mechanics",
-      "description": "Understanding orbital dynamics and mission planning.",
-      "course": "RS103"
-    },
-    {
-      "_id": "M303",
-      "name": "Spacecraft Systems Engineering",
-      "description": "Overview of spacecraft systems and subsystems engineering.",
-      "course": "RS103"
-    },
-
-        {
-          "_id": "M401",
-          "name": "Web Application Testing and QA",
-          "description": "Strategies for testing and ensuring the quality of web applications.",
-          "course": "CS4550"
-        },
-        {
-          "_id": "M402",
-          "name": "Web Development Frameworks",
-          "description": "Exploring popular web development frameworks and libraries.",
-          "course": "CS4550"
-        },
-        {
-          "_id": "M403",
-          "name": "User Experience (UX) Design for the Web",
-          "description": "Design principles and best practices for web UX.",
-          "course": "CS4550"
-        },
-        {
-          "_id": "M404",
-          "name": "Web Accessibility and Inclusive Design",
-          "description": "Ensuring web content is accessible to all users.",
-          "course": "CS4550"
-        },
-        {
-          "_id": "M501",
-          "name": "Web Development Capstone Project",
-          "description": "Building a comprehensive web project as the final assignment.",
-          "course": "CS5610"
-        },
-        {
-          "_id": "M502",
-          "name": "Emerging Trends in Web Development",
-          "description": "Exploring the latest trends and innovations in web development.",
-          "course": "CS5610"
-        },
-        {
-          "_id": "M503",
-          "name": "Web Development Career Paths",
-          "description": "Exploring various career paths and opportunities in web development.",
-          "course": "CS5610"
-        },
-        {
-          "_id": "M504",
-          "name": "Web Development Ethics and Responsibility",
-          "description": "Ethical considerations in web development and responsible practices.",
-          "course": "CS5610"
-        },
-        {
-          "_id": "M505",
-          "name": "Advanced Web Development Topics",
-          "description": "In-depth exploration of advanced topics in web development.",
-          "course": "CS5610"
-        },
-        {
-          "_id": "M506",
-          "name": "Web Application Scaling",
-          "description": "Strategies for scaling web applications and optimizing performance.",
-          "course": "CS5610"
-        }
-      ]
-      
-    
+  {
+    "_id": "M101",
+    "name": "Introduction to Rocket Propulsion",
+    "description": "Basic principles of rocket propulsion and rocket engines.",
+    "course": "RS101"
+  },
+  {
+    "_id": "M102",
+    "name": "Fuel and Combustion",
+    "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+    "course": "RS101"
+  },
+  {
+    "_id": "M103",
+    "name": "Nozzle Design",
+    "description": "Principles of rocket nozzle design and performance optimization.",
+    "course": "RS101"
+  },
+  {
+    "_id": "M201",
+    "name": "Fundamentals of Aerodynamics",
+    "description": "Basic aerodynamic concepts and fluid dynamics principles.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M202",
+    "name": "Subsonic and Supersonic Flow",
+    "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M203",
+    "name": "Aerodynamic Heating",
+    "description": "Study of aerodynamic heating and thermal protection systems.",
+    "course": "RS102"
+  },
+  {
+    "_id": "M301",
+    "name": "Spacecraft Structural Design",
+    "description": "Fundamentals of designing spacecraft structures and materials selection.",
+    "course": "RS103"
+  },
+  {
+    "_id": "M302",
+    "name": "Orbital Mechanics",
+    "description": "Understanding orbital dynamics and mission planning.",
+    "course": "RS103"
+  },
+  {
+    "_id": "M303",
+    "name": "Spacecraft Systems Engineering",
+    "description": "Overview of spacecraft systems and subsystems engineering.",
+    "course": "RS103"
+  }
+]

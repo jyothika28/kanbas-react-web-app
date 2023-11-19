@@ -1,6 +1,8 @@
 import { Navigate, useLocation,Route, Routes,useParams } from "react-router";
 import React from "react";
 import db from "../Database";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -10,12 +12,29 @@ import Grades from "./Grades";
 import KanbasNavBar from "./KanbasNavBar";
 import AssignmentNew from "./Assignments/AssignmentNew";
 
-function Courses({ courses })
+function Courses()
 {
     const {courseId}=useParams();
     const { pathname } = useLocation();
-    const [priorkanbas,kanbas,courses_from_path,id,screen]=pathname.split('/');
-    const course=courses.find((course) =>course._id===courseId);
+    const [priorkanbas,kanbas,id,screen]=pathname.split('/');
+    const [course, setCourse] = useState({});
+    const URL = "http://localhost:4000/api/courses";
+    const findCourseById = async (courseId) => {
+      // const response = await axios.get(
+      //   `${URL}/${courseId}`
+      // );
+      // console.log("Getting course");
+      // console.log(`${URL}/${courseId}`);
+      // console.log("Response");
+      // console.log(response.data);
+      //setCourse(response.data);
+    };
+    useEffect(() => {
+      console.log("CourseIDjdd");
+      console.log(courseId);
+      findCourseById(courseId);
+    }, [courseId]);
+    
     return(
         <div>
           <KanbasNavBar/>

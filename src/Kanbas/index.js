@@ -4,36 +4,81 @@ import Account from "./Account";
 import Courses from "./Courses";
 import Dashboard from "./Dashboard";
 import db from "./Database";
-import { useState } from "react";
+import { useEffect,useState } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import axios from "axios";
 
 function Kanbas() {
-  const [courses, setCourses] = useState(db.courses);
+  //const [courses, setCourses] = useState(db.courses);
+  const [courses, setCourses] = useState([]);
+  const URL = "http://localhost:4000/api/courses";
+  const findAllCourses = async () => {
+    const response = await axios.get(URL);
+    console.log("Getting courses");
+    console.log(response.data);
+    setCourses(response.data);
+  };
+  useEffect(() => {
+    findAllCourses();
+  }, []);
+
   const [course, setCourse] = useState({
+    _id: new Date().getTime().toString(),
     name: "Enter Course Name",      number: "Enter Course Number",
-    crn: "Enter CRN",
+    department: "Enter Department",
+    credits: "Enter Credits",
     startDate: "2023-09-10", endDate: "2023-12-15",
     image: "../../images/orange_card.png",
     // 
   });
-  const addNewCourse = () => {
-    setCourses([...courses, { ...course, _id: new Date().getTime().toString() }]);
+  const addNewCourse = async () => {
+    try{
+    const response = await axios.post(URL, course);
+    setCourses([response.data, ...courses]);}
+    catch(error){ console.log(error);}
   };
-  const deleteCourse = (courseId) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
+  const deleteCourse = async (courseId) => {
+    console.log("Console")
+    console.log("Deleting course with id: " + courseId);
+    console.log(course);
+    const response = await axios.delete(`${URL}/${courseId}`);
+    console.log(`${URL}/${courseId}`)
+    console.log("Deleting course");
+    console.log(response.data);
+    setCourses(courses.filter((c) => c._id !== courseId));
+    
   };
   
-  const updateCourse = () => {
+  // const updateCourse = () => {
+  //   setCourses(
+  //     courses.map((c) => {
+  //       if (c._id === course._id) {
+  //         return course;
+  //       } else {
+  //         return c;
+  //       }
+  //     })
+  //   );
+  // };
+  const updateCourse = async (course) => {
+    try{
+    const response = await axios.put(
+      `${URL}/${course._id}`,
+      course
+    );
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
           return course;
-        } else {
-          return c;
         }
+        return c;
       })
     );
+    }
+    catch(error){
+      console.log(error);
+    }
   };
 
    return (

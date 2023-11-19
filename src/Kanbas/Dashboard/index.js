@@ -15,7 +15,8 @@ function Dashboard(
 )
 {
     // const courses = db.courses;
-    
+    console.log("In dash");
+    console.log(courses);
     
     const course_length=courses.length;
     
@@ -69,10 +70,10 @@ function Dashboard(
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Course CRN</Form.Label>
+            <Form.Label>Department</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Course CRN" value={course.crn} onChange={(e) => setCourse({ ...course, crn: e.target.value }) }
+                placeholder="Enter Department" value={course.department} onChange={(e) => setCourse({ ...course, department: e.target.value }) }
                 autoFocus
               />
             </Form.Group>
@@ -134,10 +135,10 @@ function Dashboard(
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>Course CRN</Form.Label>
+            <Form.Label>Department</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter Course CRN" value={course.crn} onChange={(e) => setCourse({ ...course, crn: e.target.value }) }
+                placeholder="Enter Department" value={course.department} onChange={(e) => setCourse({ ...course, department: e.target.value }) }
                 autoFocus
               />
             </Form.Group>
@@ -167,7 +168,7 @@ function Dashboard(
           </Button>
           <Button variant="success" onClick={() => 
             {
-              updateCourse();
+              updateCourse(course);
               handleEditClose();
             }}>
             Save
@@ -178,14 +179,14 @@ function Dashboard(
 
       <div className="list-group">
       <div className="row row-cols-1 row-cols-md-4 g-4 wd-dashboard-grid">
-        {courses.map((course) => (
-          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item" style={{border:"none"}}>
+        {courses.map((cc) => (
+          <Link key={cc._id} to={`/Kanbas/Courses/${cc.number}`} className="list-group-item" style={{border:"none"}}>
             <div class="col">
             <div class="card h-100">
-                        <img src={course.image} class="card-img-top" alt="..."/>
+                        <img src={cc.image} class="card-img-top" alt="..."/>
                         <div class="card-body">
-                          <h6 className="card-title">{course.number} {course.crn} {course.name}</h6>
-                          <p className="card-text">{course.number}.{course.crn}.202410
+                          <h6 className="card-title">{cc.number} {cc.department} {cc.name}</h6>
+                          <p className="card-text">{cc.number}.{cc.department}.202410
                             <br/>
                             202410_1 Fall 2023 Semester Full Term
                           <br/>
@@ -194,14 +195,14 @@ function Dashboard(
                           onClick={(event) => {
                             event.preventDefault();
                             handleEditShow();
-                            setCourse(course);
+                            setCourse(cc);
               }}>
               Edit
             </button>&emsp;
 <button className="btn btn-danger .wd-button" style={{padding:"4px",fontSize:"0.8rem",fontWeight:"bold"}}
               onClick={(event) => {
                 event.preventDefault();
-                deleteCourse(course._id);
+                deleteCourse(cc._id);
               }}>
               Delete
             </button>

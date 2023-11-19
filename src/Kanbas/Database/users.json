@@ -1,273 +1,92 @@
 [
-    {
-      "_id": "121",
-      "username": "iron_man",
-      "password": "stark123",
-      "firstName": "Tony",
-      "lastName": "Stark",
-      "email": "tony@stark.com",
-      "dob": "1970-05-29",
-      "role": "STUDENT"
-    },
-    {
-      "_id": "122",
-      "username": "dark_knight",
-      "password": "wayne123",
-      "firstName": "Bruce",
-      "lastName": "Wayne",
-      "email": "bruce@wayne.com",
-      "dob": "1972-02-19",
-      "role": "STUDENT"
-    },
-    {
-      "_id": "123",
-      "username": "capt_america",
-      "password": "rogers123",
-      "firstName": "Steve",
-      "lastName": "Rogers",
-      "email": "steve@avengers.com",
-      "dob": "1918-07-04",
-      "role": "STUDENT"
-    },
-    {
-      "_id": "124",
-      "username": "black_widow",
-      "password": "romanoff123",
-      "firstName": "Natasha",
-      "lastName": "Romanoff",
-      "email": "natasha@avengers.com",
-      "dob": "1984-11-22",
-      "role": "STUDENT"
-    },
-    {
-      "_id": "125",
-      "username": "thor_odinson",
-      "password": "mjolnir123",
-      "firstName": "Thor",
-      "lastName": "Odinson",
-      "email": "thor@asgard.com",
-      "dob": "982-05-25",
-      "role": "STUDENT"
-    },
-    {
-      "_id": "126",
-      "username": "hulk_smash",
-      "password": "banner123",
-      "firstName": "Bruce",
-      "lastName": "Banner",
-      "email": "bruce@avengers.com",
-      "dob": "1969-12-18",
-      "role": "STUDENT"
-    },
-    {
-      "_id": "127",
-      "username": "ring_bearer",
-      "password": "shire123",
-      "firstName": "Frodo",
-      "lastName": "Baggins",
-      "email": "frodo@shire.com",
-      "dob": "1368-09-22",
-      "role": "FACULTY"
-    },
-    {
-      "_id": "128",
-      "username": "strider",
-      "password": "aragorn123",
-      "firstName": "Aragorn",
-      "lastName": "Elessar",
-      "email": "aragorn@gondor.com",
-      "dob": "2931-03-01",
-      "role": "FACULTY"
-    },
-    {
-      "_id": "129",
-      "username": "elf_archer",
-      "password": "legolas123",
-      "firstName": "Legolas",
-      "lastName": "Greenleaf",
-      "email": "legolas@mirkwood.com",
-      "dob": "2879-07-15",
-      "role": "FACULTY"
-    },
-      {
-        "_id": "130",
-        "username": "spidey",
-        "password": "parker123",
-        "firstName": "Peter",
-        "lastName": "Parker",
-        "email": "peter@webcrawler.com",
-        "dob": "1998-08-10",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "131",
-        "username": "wonder_woman",
-        "password": "prince123",
-        "firstName": "Diana",
-        "lastName": "Prince",
-        "email": "diana@amazon.com",
-        "dob": "1985-07-05",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "132",
-        "username": "ant_man",
-        "password": "lang123",
-        "firstName": "Scott",
-        "lastName": "Lang",
-        "email": "scott@shrinking.com",
-        "dob": "1979-09-22",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "133",
-        "username": "prof_x",
-        "password": "xavier123",
-        "firstName": "Charles",
-        "lastName": "Xavier",
-        "email": "charles@xavierschool.com",
-        "dob": "1945-03-14",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "134",
-        "username": "thanos",
-        "password": "mad_titan123",
-        "firstName": "Thanos",
-        "lastName": "Titan",
-        "email": "thanos@infinitygauntlet.com",
-        "dob": "1000-01-01",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "135",
-        "username": "prof_m",
-        "password": "mcgonagall123",
-        "firstName": "Minerva",
-        "lastName": "McGonagall",
-        "email": "minerva@hogwarts.com",
-        "dob": "1935-10-04",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "136",
-        "username": "gandalf",
-        "password": "moria123",
-        "firstName": "Gandalf",
-        "lastName": "Grey",
-        "email": "gandalf@middleearth.com",
-        "dob": "1021-05-20",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "137",
-        "username": "sauron",
-        "password": "onering123",
-        "firstName": "Sauron",
-        "lastName": "Darklord",
-        "email": "sauron@mordor.com",
-        "dob": "965-03-10",
-        "role": "FACULTY"
-      },
-      {
-        "_id": "138",
-        "username": "dumbledore",
-        "password": "harry123",
-        "firstName": "Albus",
-        "lastName": "Dumbledore",
-        "email": "albus@hogwarts.com",
-        "dob": "1881-08-07",
-        "role": "FACULTY"
-      },
-      {
-        "_id": "139",
-        "username": "smaug",
-        "password": "dragon123",
-        "firstName": "Smaug",
-        "lastName": "Firebreather",
-        "email": "smaug@erebor.com",
-        "dob": "1937-12-30",
-        "role": "FACULTY"
-      },
-      {
-        "_id": "140",
-        "username": "flash",
-        "password": "allen123",
-        "firstName": "Barry",
-        "lastName": "Allen",
-        "email": "barry@speedster.com",
-        "dob": "1989-03-19",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "141",
-        "username": "hawkeye",
-        "password": "barton123",
-        "firstName": "Clint",
-        "lastName": "Barton",
-        "email": "clint@archer.com",
-        "dob": "1971-01-07",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "142",
-        "username": "jessica_jones",
-        "password": "jones123",
-        "firstName": "Jessica",
-        "lastName": "Jones",
-        "email": "jessica@detective.com",
-        "dob": "1982-12-01",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "143",
-        "username": "luke_cage",
-        "password": "cage123",
-        "firstName": "Luke",
-        "lastName": "Cage",
-        "email": "luke@invincible.com",
-        "dob": "1976-06-22",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "144",
-        "username": "scarlet_witch",
-        "password": "maximoff123",
-        "firstName": "Wanda",
-        "lastName": "Maximoff",
-        "email": "wanda@hexmagic.com",
-        "dob": "1987-05-10",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "145",
-        "username": "black_panther",
-        "password": "tchalla123",
-        "firstName": "T'Challa",
-        "lastName": "Wakanda",
-        "email": "tchalla@wakanda.com",
-        "dob": "1975-08-11",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "146",
-        "username": "doctor_strange",
-        "password": "strange123",
-        "firstName": "Stephen",
-        "lastName": "Strange",
-        "email": "stephen@magic.com",
-        "dob": "1963-12-05",
-        "role": "STUDENT"
-      },
-      {
-        "_id": "147",
-        "username": "wolverine",
-        "password": "logan123",
-        "firstName": "Logan",
-        "lastName": "Howlett",
-        "email": "logan@adamantium.com",
-        "dob": "1832-04-14",
-        "role": "STUDENT"
-      }
-    
-  ]
+  {
+    "_id": "121",
+    "username": "iron_man",
+    "password": "stark123",
+    "firstName": "Tony",
+    "lastName": "Stark",
+    "email": "tony@stark.com",
+    "dob": "1970-05-29",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "122",
+    "username": "dark_knight",
+    "password": "wayne123",
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "email": "bruce@wayne.com",
+    "dob": "1972-02-19",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "123",
+    "username": "capt_america",
+    "password": "rogers123",
+    "firstName": "Steve",
+    "lastName": "Rogers",
+    "email": "steve@avengers.com",
+    "dob": "1918-07-04",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "124",
+    "username": "black_widow",
+    "password": "romanoff123",
+    "firstName": "Natasha",
+    "lastName": "Romanoff",
+    "email": "natasha@avengers.com",
+    "dob": "1984-11-22",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "125",
+    "username": "thor_odinson",
+    "password": "mjolnir123",
+    "firstName": "Thor",
+    "lastName": "Odinson",
+    "email": "thor@asgard.com",
+    "dob": "982-05-25",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "126",
+    "username": "hulk_smash",
+    "password": "banner123",
+    "firstName": "Bruce",
+    "lastName": "Banner",
+    "email": "bruce@avengers.com",
+    "dob": "1969-12-18",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "127",
+    "username": "ring_bearer",
+    "password": "shire123",
+    "firstName": "Frodo",
+    "lastName": "Baggins",
+    "email": "frodo@shire.com",
+    "dob": "1368-09-22",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "128",
+    "username": "strider",
+    "password": "aragorn123",
+    "firstName": "Aragorn",
+    "lastName": "Elessar",
+    "email": "aragorn@gondor.com",
+    "dob": "2931-03-01",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "129",
+    "username": "elf_archer",
+    "password": "legolas123",
+    "firstName": "Legolas",
+    "lastName": "Greenleaf",
+    "email": "legolas@mirkwood.com",
+    "dob": "2879-07-15",
+    "role": "FACULTY"
+  }
+]
