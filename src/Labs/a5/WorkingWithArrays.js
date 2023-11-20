@@ -1,7 +1,9 @@
 import React, { useEffect,useState } from "react";
 import axios from "axios";
 function WorkingWithArrays() {
-    const API = "http://localhost:4000/a5/todos";
+      const LAB_BASE = process.env.REACT_APP_LAB_BASE;
+      const TODOS_URL = `${LAB_BASE}/todos`;
+    //const API = "http://localhost:4000/a5/todos";
     const [errorMessage, setErrorMessage] = useState(null);
     const [todo, setTodo] = useState({
         id: 1,
@@ -12,26 +14,26 @@ function WorkingWithArrays() {
       });
       const [todos, setTodos] = useState([]);
       const postTodo = async () => {
-        const response = await axios.post(API, todo);
+        const response = await axios.post(TODOS_URL, todo);
         setTodos([...todos, response.data]);
       };
     
       const fetchTodos = async () => {
-        const response = await axios.get(API);
+        const response = await axios.get(TODOS_URL);
         setTodos(response.data);
       };
       useEffect(() => {
         fetchTodos();
       }, []);
       const createTodo = async () => {
-        const response = await axios.get(`${API}/create`);
+        const response = await axios.get(`${TODOS_URL}/create`);
         setTodos(response.data);
       };
     
       const removeTodo = async (todo) => {
         try {
           const response = await axios.delete(
-            `${API}/${todo.id}`);
+            `${TODOS_URL}/${todo.id}`);
           setTodos(todos.filter((t) => t.id !== todo.id));
         } catch (error) {
           console.log(error);
@@ -40,24 +42,24 @@ function WorkingWithArrays() {
     
       };
       const fetchTodoById = async (id) => {
-        const response = await axios.get(`${API}/${id}`);
+        const response = await axios.get(`${TODOS_URL}/${id}`);
         setTodo(response.data);
       };
       const updateTitle = async () => {
         const response = await axios.get(
-          `${API}/${todo.id}/title/${todo.title}`);
+          `${TODOS_URL}/${todo.id}/title/${todo.title}`);
         setTodos(response.data);
       };
       
       const deleteTodo = async (todo) => {
-        const response = await axios.delete(`${API}/${todo.id}`);
+        const response = await axios.delete(`${TODOS_URL}/${todo.id}`);
         setTodos(todos.filter((t) => t.id !== todo.id));
       };
     
       const updateTodo = async () => {
         try {
           const response = await axios.put(
-            `${API}/${todo.id}`, todo);
+            `${TODOS_URL}/${todo.id}`, todo);
           setTodos(todos.map((t) => (
             t.id === todo.id ? todo : t)));
           setTodo({});
@@ -74,7 +76,7 @@ function WorkingWithArrays() {
       <div>
         <h3>Working with Arrays</h3>
         <h4>Retrieving Arrays</h4>
-        <a href={API} className="btn btn-primary me-2">
+        <a href={TODOS_URL} className="btn btn-primary me-2">
           Get Todos
         </a>
         <h4>Retrieving an Item from an Array by ID</h4>
@@ -83,17 +85,17 @@ function WorkingWithArrays() {
         value={todo.id}
         onChange={(e) => setTodo({ ...todo,
           id: e.target.value })}/>
-      <a href={`${API}/${todo.id}`}
+      <a href={`${TODOS_URL}/${todo.id}`}
          className="btn btn-primary me-2">
         Get Todo by ID
       </a>
       <h3>Filtering Array Items</h3>
-  <a href={`${API}?completed=true`}
+  <a href={`${TODOS_URL}?completed=true`}
      className="btn btn-primary me-2" >
     Get Completed Todos
   </a>
   <h4>Creating new Items in an Array</h4>
-  <a href={`${API}/create`}
+  <a href={`${TODOS_URL}/create`}
      className="btn btn-primary me-2">
     Create Todo
   </a>
@@ -105,7 +107,7 @@ function WorkingWithArrays() {
         className="form-control mb-2"
         type="number"
       />
-      <a href={`${API}/${todo.id}/delete`}
+      <a href={`${TODOS_URL}/${todo.id}/delete`}
          className="btn btn-primary me-2">
         Delete Todo with ID = {todo.id}
       </a>
@@ -136,17 +138,17 @@ function WorkingWithArrays() {
 
 <h3>Updating an Item in an Array</h3>
        <a
-        href={`${API}/${todo.id}/title/${todo.title}`}
+        href={`${TODOS_URL}/${todo.id}/title/${todo.title}`}
         className="btn btn-primary me-2" >
         Update Title to {todo.title}
       </a>
       <a
-        href={`${API}/${todo.id}/completed/${todo.completed}`}
+        href={`${TODOS_URL}/${todo.id}/completed/${todo.completed}`}
         className="btn btn-primary me-2" >
         Update completed to {todo.completed}
       </a>
       <a
-        href={`${API}/${todo.id}/description/${todo.description}`}
+        href={`${TODOS_URL}/${todo.id}/description/${todo.description}`}
         className="btn btn-primary me-2" >
         Update Description to {todo.description}
       </a>

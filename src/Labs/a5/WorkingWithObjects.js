@@ -9,14 +9,17 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
       });
-      const URL = "http://localhost:4000/a5/assignment";
+      
+      //const URL = "http://localhost:4000/a5/assignment";
+      const LAB_BASE = process.env.REACT_APP_LAB_BASE;
+      const ASSIGNMENT_URL = `${LAB_BASE}/assignment`;
       const fetchAssignment = async () => {
-        const response = await axios.get(`${URL}`);
+        const response = await axios.get(`${ASSIGNMENT_URL}`);
         setAssignment(response.data);
       };
       const updateTitle = async () => {
         const response = await axios
-          .get(`${URL}/title/${assignment.title}`);
+          .get(`${ASSIGNMENT_URL}/title/${assignment.title}`);
         setAssignment(response.data);
       };
       useEffect(() => {
@@ -28,7 +31,7 @@ function WorkingWithObjects() {
       <h3>Working With Objects</h3>
       <h4>Modifying Properties</h4>
       <a
-        href={`${URL}/title/${assignment.title}`}
+        href={`${ASSIGNMENT_URL}/title/${assignment.title}`}
         className="btn btn-primary me-2 float-end"
       >
         Update Title
@@ -39,7 +42,7 @@ function WorkingWithObjects() {
         className="form-control mb-2 w-75"
         type="text" />
       <a
-        href={`${URL}/score/${assignment.score}`}
+        href={`${ASSIGNMENT_URL}/score/${assignment.score}`}
         className="btn btn-primary me-2 float-end"
       >
         Update Score
@@ -56,7 +59,7 @@ function WorkingWithObjects() {
         type="number"
       />
 <a
-  href={`${URL}/completed/${assignment.completed}`}
+  href={`${ASSIGNMENT_URL}/completed/${assignment.completed}`}
   className="btn btn-success me-2 float-end"
 >
   Update Completed
@@ -85,23 +88,23 @@ function WorkingWithObjects() {
       </button>
     
       <h4>Retrieving Objects</h4>
-      <a href="http://localhost:4000/a5/assignment"
+      <a href={`${ASSIGNMENT_URL}`}
          className="btn btn-primary me-2">
         Get Assignment
       </a>
       <h4>Retrieving Properties</h4>
       <a
-        href="http://localhost:4000/a5/assignment/title"
+        href={`${ASSIGNMENT_URL}/title`}
         className="btn btn-primary me-2">
         Get Title
       </a>
       <a
-        href="http://localhost:4000/a5/assignment/score"
+        href={`${ASSIGNMENT_URL}/score`}
         className="btn btn-primary me-2">
         Get Score
       </a>
       <a
-        href="http://localhost:4000/a5/assignment/completed"
+        href={`${ASSIGNMENT_URL}/completed`}
         className="btn btn-primary me-2">
        Is Completed
       </a>
