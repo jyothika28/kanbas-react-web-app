@@ -7,22 +7,36 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
-
+import { findModulesForCourse, createModule } from "./client";
 function Modules() {
+  const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -72,7 +86,7 @@ function Modules() {
           {/* onClick={handleClose} */}
           <Button variant="danger"  onClick={() => 
             {
-              dispatch(addModule({ ...module, course: courseId }));
+              handleAddModule();
               handleClose();
             }}>
             Add

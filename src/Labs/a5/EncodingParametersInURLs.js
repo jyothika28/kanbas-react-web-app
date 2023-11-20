@@ -39,7 +39,7 @@ function EncodingParametersInURLs() {
         onChange={(e) => setB(e.target.value)}
         className="form-control" type="number" value={b}/>
        <input value={result}
-        className="form-control mb-2" type="number" readOnly
+        className="form-control mb-2" type="number"
       />
       <h3>Fetch Result</h3>
       <button onClick={() => fetchSum(a, b)}

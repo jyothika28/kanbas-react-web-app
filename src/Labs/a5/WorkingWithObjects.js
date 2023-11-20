@@ -38,6 +38,43 @@ function WorkingWithObjects() {
         value={assignment.title}
         className="form-control mb-2 w-75"
         type="text" />
+      <a
+        href={`${URL}/score/${assignment.score}`}
+        className="btn btn-primary me-2 float-end"
+      >
+        Update Score
+      </a>
+      <input
+        onChange={(e) =>
+          setAssignment({
+            ...assignment,
+            score: e.target.value
+          })
+        }
+        value={assignment.score}
+        className="form-control mb-2 w-75"
+        type="number"
+      />
+<a
+  href={`${URL}/completed/${assignment.completed}`}
+  className="btn btn-success me-2 float-end"
+>
+  Update Completed
+</a>
+<input
+  onChange={(e) =>
+    setAssignment({
+      ...assignment,
+      completed: e.target.checked
+    })
+  }
+  id="CompletedId"
+  checked={assignment.completed}
+  className="form-check-input mb-2"
+  type="checkbox"
+/>
+<label for="CompletedId" className="form-check-label">Completed</label>
+     
         <button onClick={updateTitle}
               className="w-100 btn btn-primary mb-2">
         Update Title to: {assignment.title}
@@ -57,6 +94,16 @@ function WorkingWithObjects() {
         href="http://localhost:4000/a5/assignment/title"
         className="btn btn-primary me-2">
         Get Title
+      </a>
+      <a
+        href="http://localhost:4000/a5/assignment/score"
+        className="btn btn-primary me-2">
+        Get Score
+      </a>
+      <a
+        href="http://localhost:4000/a5/assignment/completed"
+        className="btn btn-primary me-2">
+       Is Completed
       </a>
     </div>
   );

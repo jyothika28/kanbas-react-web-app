@@ -18,7 +18,7 @@ function KanbasNav()
               <br/>
             <ol className="breadcrumb">
               <li>{<HiBars3 style={{color:"rgb(176,37,37)", fontSize:"1.9rem"}}/>}</li>&emsp;
-              <li className="breadcrumb-item" style={{color:"rgb(176,37,37)"}}>{courseId}.{course.number}.202310</li>
+              <li className="breadcrumb-item" style={{color:"rgb(176,37,37)"}}>{courseId}.202310</li>
               <li className="breadcrumb-item active" aria-current="page">{screen}</li>
               
               {assignment_name ? (

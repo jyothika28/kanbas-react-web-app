@@ -1,4 +1,5 @@
 import {React,useState} from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import {RxDragHandleDots2} from "react-icons/rx";
@@ -12,17 +13,42 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
+import { findModulesForCourse,createModule } from "./client";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import * as client from "./client";
 function ModuleList() {
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
   
   // const [modules, setModules] = useState(db.modules);
   // const [module, setModule] = useState({
@@ -54,7 +80,9 @@ function ModuleList() {
         />
   </div>
   <div class="form-group">
-  <button style={{margin:"1%"}} className="btn btn-success" onClick={() => dispatch(updateModule(module))}> Update</button> 
+  <button style={{margin:"1%"}} className="btn btn-success" onClick={() => handleAddModule()}> Add</button> 
+
+  <button style={{margin:"1%"}} className="btn btn-primary" onClick={() => handleUpdateModule(module)}> Update</button> 
   </div>
 </form>
        
@@ -76,7 +104,7 @@ function ModuleList() {
                     <RxDragHandleDots2/> <IoMdArrowDropright/>&emsp;<b>{module.name}</b>
                     <div className="float-end">
                     <button class="btn btn-warning" style={{fontSize:"0.8rem",padding:"6px",fontWeight:"bold"}} onClick={(event) => {event.preventDefault();dispatch(setModule(module))}}>Edit</button>&emsp;
-             <button className="btn btn-danger" style={{fontSize:"0.8rem",padding:"6px",fontWeight:"bold"}} onClick={(event) => {event.preventDefault();dispatch(deleteModule(module._id))}}> Delete</button>&emsp;
+             <button className="btn btn-danger" style={{fontSize:"0.8rem",padding:"6px",fontWeight:"bold"}} onClick={(event) => {event.preventDefault();handleDeleteModule(module._id)}}> Delete</button>&emsp;
 
                         <BsFillCheckCircleFill style={{color:"green"}}/><BiCaretDown/>&emsp; <AiOutlinePlus/>&emsp;<HiOutlineDotsVertical/>
                         
