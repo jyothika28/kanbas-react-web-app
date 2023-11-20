@@ -11,7 +11,7 @@ function WorkingWithObjects() {
       });
       
       //const URL = "http://localhost:4000/a5/assignment";
-      const LAB_BASE = process.env.REACT_APP_LAB_BASE;
+      const LAB_BASE = process.env.e;
       const ASSIGNMENT_URL = `${LAB_BASE}/assignment`;
       const fetchAssignment = async () => {
         const response = await axios.get(`${ASSIGNMENT_URL}`);
