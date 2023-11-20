@@ -10,14 +10,14 @@ import {
 import { useSelector, useDispatch } from "react-redux";
 
 function AssignmentNew() {
-//   const { assignmentId } = useParams();
+      const { assignmentId } = useParams();
 //   const assignment = db.assignments.find(
 //     (assignment) => assignment._id === assignmentId);
 //     console.log(assignmentId);
 
   const { courseId } = useParams();
-  const assignments = useSelector((state) => state.assignmentsReducer.assignments);
-  const assignment = useSelector((state) => state.assignmentsReducer.assignments);
+  const assignments = useSelector((state) => state.assignmentsReducer.assignment);
+  const assignment= useSelector((state) => state.assignmentsReducer.assignment);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleSave = () => {

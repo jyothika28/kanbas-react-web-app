@@ -9,12 +9,22 @@ import {HiOutlineDotsVertical} from "react-icons/hi";
 import {BsFillCheckCircleFill} from "react-icons/bs";
 import {FaFilePen} from "react-icons/fa6";
 import AssignmentNew from "./AssignmentNew";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+  setAssignment,
+} from "./assignmentsReducer";
 
 function Assignments() {
   const { courseId } = useParams();
-  const assignments = db.assignments;
+  // const assignments = db.assignments;
   const courseAssignments = assignments.filter(
     (assignment) => assignment.course === courseId);
+  const assignments = useSelector((state) => state.assignmentsReducer.assignment);
+  const assignment= useSelector((state) => state.assignmentsReducer.assignment);
+  const dispatch = useDispatch();
   return (
     <div className="container">
         <br/>

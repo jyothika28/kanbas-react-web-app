@@ -18,7 +18,9 @@ function Courses()
     const { pathname } = useLocation();
     const [priorkanbas,kanbas,id,screen]=pathname.split('/');
     const [course, setCourse] = useState({});
-    const URL = "http://localhost:4000/api/courses";
+    const API_BASE = process.env.REACT_APP_API_BASE;
+const MODULES_URL = `${API_BASE}/modules`;
+const COURSES_URL = `${API_BASE}/courses`;
     const findCourseById = async (courseId) => {
       // const response = await axios.get(
       //   `${URL}/${courseId}`
