@@ -4,6 +4,8 @@ function ArrayStateVariable() {
   const addElement = () => {
     setArray([...array, Math.floor(Math.random() * 100)]);
   };
+  // const a={name:"John",age:31,city:"New York"};
+  // const b={...a,age:32};
   const deleteElement = (index) => {
     setArray(array.filter((item, i) => i !== index));
   };

@@ -6,6 +6,7 @@ function Add({ a, b }) {
           {a} + {b} = {a + b}
         </p>
       </div>
+    
     );
   }
-  export default Add;
+export default Add;
