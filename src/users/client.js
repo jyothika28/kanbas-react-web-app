@@ -17,6 +17,7 @@ export const account = async () => {
     const response = await request.put(`${USERS_API}/${user._id}`, user);
     return response.data;
   };
+  //change
   export const findAllUsers = async () => {
     const response = await request.get(`${USERS_API}`);
     return response.data;
